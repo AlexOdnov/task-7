@@ -1,8 +1,8 @@
 {
-  "name": "project_name",
+  "name": "task-7",
   "version": "1.0.0",
   "description": "Test GitHub Actions Deploy",
-  "homepage": "https://{login}.github.io/{project_name}",
+  "homepage": "https://AlexOdnov.github.io/task-7",
   "main": "index.js",
   "scripts": {
     "serve": "browser-sync start --server src --no-notify --no-ui --cwd src --files index.html,styles/**/*",
