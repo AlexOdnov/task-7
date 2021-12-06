@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- подключаем стили Mocha, для отображения результатов -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css"
+    />
     <!-- подключаем библиотеку Mocha -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
     <!-- настраиваем Mocha: предстоит BDD-тестирование -->
     <script>
-        mocha.setup('bdd');
+      mocha.setup('bdd');
     </script>
 
     <title>Test page</title>
@@ -20,12 +22,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
     <!-- в chai есть много всего, выносим assert в глобальную область -->
     <script>
-        var assert = chai.assert;
+      var assert = chai.assert;
     </script>
-</head>
+  </head>
 
-<body>
-    <script src="./scripts/pow.js" type="module"></script>
+  <body>
+    <script src="./scripts/pow.js"></script>
 
     <!-- в этом скрипте находятся спеки -->
     <script src="./scripts/test.js"></script>
@@ -35,8 +37,7 @@
 
     <!-- запустить тесты! -->
     <script>
-        mocha.run();
+      mocha.run();
     </script>
-</body>
-
+  </body>
 </html>
