@@ -1,11 +1,19 @@
-function pow (x, n) {
-    let result = 1;
+function pow(x, n) {
+  if (n % 1) {
+    return NaN;
+  }
 
-    for (let i = 0; i < n; i++) {
-        result *= x;
-    }
+  if (n < 0) {
+    return NaN;
+  }
 
-    return result;
+  let result = 1;
+
+  for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+
+  return result;
 }
 
 module.exports = pow;
